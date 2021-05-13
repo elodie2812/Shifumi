@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="jeu shifumi">
+        <!--Bootstrap-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <!--Favicon-->
+        <link rel="shortcut icon" href="assets/img/shortcut.png">
+        <script src="https://kit.fontawesome.com/1a5f669fe2.js" crossorigin="anonymous"></script>
+        <!--Google Fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,400;1,300;1,400&family=Goblin+One&display=swap" rel="stylesheet">
+        
+        <title>Shifumi</title>
+    </head>
+    <body>
+        <!--partie header-->
+        <main class="jeu">
+            <div class="container-fluid background">
+                <div class="row mt-3">
+                        <div class="col-lg-3 col-md-3 ">
+                            <a href="index.html"><img id="logo" src="assets/img/shifumi.png" class="img-fluid rounded mx-auto d-block" alt="logo"></a>
+                        </div>
+                        <div class="col-lg-9 col-md-9 text-center score" style="color: white;">
+                            <h1 id="victoryFont">Victoires : <span class="victory">0</span></h1>
+                            <p>Pourcentage de victoires contre l'ordinateur : <span class="percent">100%</span></p>
+                        </div>
+                </div> 
+
+                <div class="container-fluid hands">
+                    <div class="row">
+                            <div class="col-lg-4 col-md-4 col-4 hands">
+                                <img src="assets/img/rock.png" id="pierre" class="img-fluid draggable sign ui-widget-content mx-auto d-block" alt="pierre">
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-4 items-center hands">
+                                <img src="assets/img/feuille.png" id="feuille" class="img-fluid draggable sign ui-widget-content mx-auto d-block" alt="feuille">
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-4 hands">
+                                <img src="assets/img/victory.png" id="ciseaux" class="img-fluid draggable sign ui-widget-content mx-auto d-block" alt="ciseaux">
+                            </div>
+                    </div>
+                </div>
+
+                <!--<div class="row">
+                <div class="col-lg-12">
+                    <img class="mx-auto d-block" src="../shifumi/assets/img/titre2.png">
+                </div>
+                </div>-->
+                <!--partie jeux-->     
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-4">
+                        <p class="text-center font-weight-bolder player1">HUMAN</p>
+                            <div class="droppable mx-auto d-block man"></div>
+                    </div> 
+                    <div class="col-lg-4 col-md-4 col-4 tableau font-weight-bolder text-center score">
+                        <h2 id="deco">SCORE</h2>
+                        <p><span class="playerVictory">HUMAN : 0 </span></p>
+                        <p id="vs"> VS </p>
+                        <p><span class="machineVictory">MACHINE : 0</span></p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-4">
+                        <p class="text-center font-weight-bolder player2" >MACHINE</p>
+                        <div class="droppableMachine mx-auto d-block machine"></div>
+                    </div> 
+                    <div class="col-lg-12 col-md-12 col12">
+                        <img src="assets/img/titre3.png" alt="joueurs" class="img-fluid mx-auto d-block">
+                    </div>
+                </div>
+            </div>
+        </main>
+       
+        <!--GIF-->
+
+        <div id="modalsLoose">
+            <div class="modal position-fixed text-center " id="godzilla" tabindex="1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog " role="document">
+                    <div class="modal-body">
+                        <iframe src="https://giphy.com/embed/bVjLUMAFD5LZr1iRMc" width="480" height="270" class="giphy-embed" style="border: 0;" allowFullScreen ></iframe>
+                        <p><a href="https://giphy.com/gifs/HBOMax-godzilla-hbomax-classic-bVjLUMAFD5LZr1iRMc"></a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal position-fixed text-center " id="looser" tabindex="1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog " role="document">
+                    <div class="modal-body">
+                        <iframe src="https://giphy.com/embed/A6jVdKALdZO0M" width="480" height="270" style="border: 0;"
+                            class="giphy-embed" allowFullScreen></iframe>
+                        <p><a href="https://giphy.com/gifs/reactionseditor-queen-champion-A6jVdKALdZO0M"></a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal position-fixed text-center " id="shook" tabindex="1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog " role="document">
+                    <div class="modal-body">
+                        <iframe src="https://giphy.com/embed/xUNda1TE8WBkTW7fjy?video=0" width="480" height="270"
+                        style="border: 0;" class="giphy-embed" allowFullScreen></iframe>
+                        <p><a href="https://giphy.com/gifs/wow-japan-sugoi-xUNda1TE8WBkTW7fjy"></a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal position-fixed text-center " id="geisha" tabindex="1" role="dialog"
+                aria-hidden="true">
+                <div class="modal-dialog " role="document">
+                    <div class="modal-body">
+                        <iframe src="https://giphy.com/embed/3o6nUUWXRSOmR3UC4w?video=0" width="480"
+                            height="270" style="border: 0;" class="giphy-embed" allowFullScreen></iframe>
+                        <p><a href="https://giphy.com/gifs/comedy-japan-laughing-3o6nUUWXRSOmR3UC4w"></a></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal position-fixed text-center " id="bot" tabindex="1" role="dialog"
+                aria-hidden="true">
+                <div class="modal-dialog " role="document">
+
+                    <div class="modal-body">
+                        <iframe src="https://giphy.com/embed/1wqqysrQRtDtvVl3Vv" width="480" height="260"
+                        style="border: 0;" class="giphy-embed" allowFullScreen></iframe>
+                        <p><a href="https://giphy.com/gifs/reaction-mood-1wqqysrQRtDtvVl3Vv"></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="modalsWin">
+            <div class="modal position-fixed text-center " id="winner" tabindex="1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog " role="document">
+                    <div class="modal-content ">
+                        <iframe src="https://giphy.com/embed/xUNda3PK5oli2SPkBO?video=0" width="480" height="270"
+                        style="border: 0;" class="giphy-embed" allowFullScreen></iframe>
+                        <p><a href="https://giphy.com/gifs/japan-laughing-clapping-xUNda3PK5oli2SPkBO"></a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal position-fixed text-center " id="dance" tabindex="1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog " role="document">
+                    <div class="modal-content ">
+                        <iframe src="https://giphy.com/embed/l4Epi5iue2quSrq9y?video=0" width="480" height="270"
+                        style="border: 0;" class="giphy-embed" allowFullScreen></iframe>
+                        <p><a href="https://giphy.com/gifs/comedy-yes-l4Epi5iue2quSrq9y"></a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal position-fixed text-center " id="banana" tabindex="1" role="dialog"
+                aria-hidden="true">
+                <div class="modal-dialog " role="document">
+                    <div class="modal-content ">
+                        <iframe src="https://giphy.com/embed/10a72Df8tWbtXq" width="480" height="360"
+                        style="border: 0;" class="giphy-embed" allowFullScreen></iframe>
+                        <p><a href="https://giphy.com/gifs/japanese-commercial-dole-10a72Df8tWbtXq"></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--fin gif-->
+
+        <div class="row align-items-center">
+            <div class="col-lg-5 col-md-5 m-auto align-middle">
+                <div id="results">
+                    <img src="assets/img/logorose.png" alt="image Fin" width="500" height="300">
+                    <div id="end">
+                        <div id="finalResult"></div>
+                        <a href="jeux.html" class="btn btn-light btn-lg replay pt-2" role="button">Rejouer !</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--partie footer-->
+        <footer class="container-fluid mt-3 footer">
+            <div class="row">
+                <div class="col-lg-5 col-md-5 d-flex sound">
+                    <p class="text-left p-3"> Jouer avec le son  👉  </p>
+                    <audio controls class="px-3">
+                        <source src="assets/audio/pubGalbo.mp3" type="audio/mpeg"/>
+                    </audio>
+                </div>
+                <div class="col-lg-7 col-md-7 text-center pt-4">
+                    <p><i class="far fa-copyright"></i> YATTA TEAM 2021</p>
+                </div>
+            </div>
+        </footer>
+
+        <!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>-->
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    </body>
+</html>
