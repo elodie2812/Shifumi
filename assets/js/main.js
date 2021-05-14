@@ -87,18 +87,27 @@ $ (function () {
                 alert(msg);
 
                 //$(".droppableMachine").empty(); 
+                games = 5;
+                playerVictory = 0; //force le joueur à perdre
+
                 if (games==5){
                     $(".jeu").hide();
                     $(".footer").hide();
                     $("#results").show();
 
-                    if (percent >= 0 && percent < 50) {
-                        $('#finalResult').html('PERDU... </br>'+ playerVictory + ' victoire(s) sur ' + games +' parties.');
-                    } else if (percent == 50) {
-                        $('#finalResult').html('ÉGALITÉ ! </br>' + playerVictory + ' victoire(s) sur ' + games +' parties.');
-                    }else if (percent >= 51 && percent <= 100) {
-                        $('#finalResult').html('GAGNÉ ! </br>' + playerVictory + ' victoire(s) sur ' + games +' parties.');
-                    } 
+                    if (playerVictory == 0 ) {
+                        $('#finalResult').html( 'PERDU... </br> <a href="https://www.youtube.com/watch?v=v7ScGV5128A">TA RÉCOMPENSE ICI 🎁 </a> </br>' + playerVictory + ' victoire(s) sur ' + games +' parties.');
+                    }
+
+                    else {
+                        if (percent >= 0 && percent < 50) {
+                            $('#finalResult').html('PERDU... </br>'+ playerVictory + ' victoire(s) sur ' + games +' parties.');
+                        } else if (percent == 50) {
+                            $('#finalResult').html('ÉGALITÉ ! </br>' + playerVictory + ' victoire(s) sur ' + games +' parties.');
+                        }else if (percent >= 51 && percent <= 100) {
+                            $('#finalResult').html('GAGNÉ ! </br>' + playerVictory + ' victoire(s) sur ' + games +' parties.');
+                        } 
+                    }
                 } 
 
             } 
