@@ -87,8 +87,8 @@ $ (function () {
                 alert(msg);
 
                 //$(".droppableMachine").empty(); 
-                games = 5;
-                playerVictory = 0; //force le joueur à perdre
+                //games = 5;
+                //playerVictory = 0; //force le joueur à perdre
 
                 if (games==5){
                     $(".jeu").hide();
