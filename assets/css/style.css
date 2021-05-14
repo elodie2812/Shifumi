@@ -66,7 +66,6 @@ body {
 }
 
 .tableau {
-    font-size: xx-large;
     color: white;
 }
 
@@ -90,6 +89,7 @@ body {
 #deco {
     text-decoration: underline;
     font-family: 'Goblin One', cursive;
+    font-size: 1.2em;
 }
 
 /*Accueil Video*/
@@ -211,13 +211,13 @@ footer {
 @media screen AND (max-width: 680px) {
 
     .draggable {
-        width: 150px;
-        height: 150px;
+        width: 140px;
+        height: 140px;
     }
     
     .droppable {
-        width: 150px;
-        height:150px;
+        width: 140px;
+        height:140px;
     }
 
     .img {
@@ -226,17 +226,17 @@ footer {
     }
 
     .perso {
-        width: 140px;
-        height: 140px;
+        width: 130px;
+        height: 130px;
     }
     
     .droppableMachine {
-        width: 150px;
-        height:150px;
+        width: 140px;
+        height:140px;
     }
 
     .score {
-        font-size: 1.5em;
+        font-size: 1.4em;
     }
 
     .player1 {
@@ -246,7 +246,7 @@ footer {
     .player2 {
         font-size: 1.5em;
     }
-
+    
     /*#cParti {
         margin-top: 90px;
         margin-left: 180px;
