@@ -21,24 +21,24 @@
         <main class="jeu">
             <div class="container-fluid background">
                 <div class="row mt-3">
-                        <div class="col-lg-3 col-md-3 ">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-3 ">
                             <a href="index.html"><img id="logo" src="assets/img/shifumi.png" class="img-fluid rounded mx-auto d-block" alt="logo"></a>
                         </div>
-                        <div class="col-lg-9 col-md-9 text-center score" style="color: white;">
+                        <div class="col-lg-9 col-md-9 text-center score align-self-center" style="color: white;">
                             <h1 id="victoryFont">Victoires : <span class="victory">0</span></h1>
                             <p>Pourcentage de victoires contre l'ordinateur : <span class="percent">100%</span></p>
                         </div>
                 </div> 
 
-                <div class="container-fluid hands">
+                <div class="container-fluid hands p-4">
                     <div class="row">
-                            <div class="col-lg-4 col-md-4 col-4 hands">
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-4 hands">
                                 <img src="assets/img/rock.png" id="pierre" class="img-fluid draggable sign ui-widget-content mx-auto d-block" alt="pierre">
                             </div>
-                            <div class="col-lg-4 col-md-4 col-4 items-center hands">
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-4 items-center hands">
                                 <img src="assets/img/feuille.png" id="feuille" class="img-fluid draggable sign ui-widget-content mx-auto d-block" alt="feuille">
                             </div>
-                            <div class="col-lg-4 col-md-4 col-4 hands">
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-4 hands">
                                 <img src="assets/img/victory.png" id="ciseaux" class="img-fluid draggable sign ui-widget-content mx-auto d-block" alt="ciseaux">
                             </div>
                     </div>
@@ -51,21 +51,25 @@
                 </div>-->
                 <!--partie jeux-->     
                 <div class="row">
-                    <div class="col-lg-4 col-md-4 col-4">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-4">
                         <p class="text-center font-weight-bolder player1">HUMAN</p>
-                            <div class="droppable mx-auto d-block man"></div>
+                            <div class="droppable mx-auto d-block man">
+                                <img class="img-fluid perso" src="assets/img/hatsune.png" alt="hatsune" width="180" height="180">
+                            </div>
                     </div> 
-                    <div class="col-lg-4 col-md-4 col-4 tableau font-weight-bolder text-center score">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-4 tableau font-weight-bolder text-center align-self-center score p-4">
                         <h2 id="deco">SCORE</h2>
                         <p><span class="playerVictory">HUMAN : 0 </span></p>
                         <p id="vs"> VS </p>
                         <p><span class="machineVictory">MACHINE : 0</span></p>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-4">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-4">
                         <p class="text-center font-weight-bolder player2" >MACHINE</p>
-                        <div class="droppableMachine mx-auto d-block machine"></div>
+                        <div class="droppableMachine mx-auto d-block machine">
+                            <img class="img-fluid perso" src="assets/img/rose2.png" alt="personnage" width="160" height="160">
+                        </div>
                     </div> 
-                    <div class="col-lg-12 col-md-12 col12">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col12 pt-3">
                         <img src="assets/img/titre3.png" alt="joueurs" class="img-fluid mx-auto d-block">
                     </div>
                 </div>
@@ -75,7 +79,7 @@
         <!--GIF-->
 
         <div id="modalsLoose">
-            <div class="modal position-fixed text-center " id="godzilla" tabindex="1" role="dialog" aria-hidden="true">
+            <div class="modal position-fixed text-center" id="godzilla" tabindex="1" role="dialog" aria-hidden="true">
                 <div class="modal-dialog " role="document">
                     <div class="modal-body">
                         <iframe src="https://giphy.com/embed/bVjLUMAFD5LZr1iRMc" width="480" height="270" class="giphy-embed" style="border: 0;" allowFullScreen ></iframe>
@@ -84,7 +88,7 @@
                 </div>
             </div>
 
-            <div class="modal position-fixed text-center " id="looser" tabindex="1" role="dialog" aria-hidden="true">
+            <div class="modal position-fixed text-center" id="looser" tabindex="1" role="dialog" aria-hidden="true">
                 <div class="modal-dialog " role="document">
                     <div class="modal-body">
                         <iframe src="https://giphy.com/embed/A6jVdKALdZO0M" width="480" height="270" style="border: 0;"
@@ -94,7 +98,7 @@
                 </div>
             </div>
 
-            <div class="modal position-fixed text-center " id="shook" tabindex="1" role="dialog" aria-hidden="true">
+            <div class="modal position-fixed text-center" id="shook" tabindex="1" role="dialog" aria-hidden="true">
                 <div class="modal-dialog " role="document">
                     <div class="modal-body">
                         <iframe src="https://giphy.com/embed/xUNda1TE8WBkTW7fjy?video=0" width="480" height="270"
@@ -104,7 +108,7 @@
                 </div>
             </div>
 
-            <div class="modal position-fixed text-center " id="geisha" tabindex="1" role="dialog"
+            <div class="modal position-fixed text-center" id="geisha" tabindex="1" role="dialog"
                 aria-hidden="true">
                 <div class="modal-dialog " role="document">
                     <div class="modal-body">
@@ -115,7 +119,7 @@
                 </div>
             </div>
             
-            <div class="modal position-fixed text-center " id="bot" tabindex="1" role="dialog"
+            <div class="modal position-fixed text-center" id="bot" tabindex="1" role="dialog"
                 aria-hidden="true">
                 <div class="modal-dialog " role="document">
 
@@ -129,7 +133,7 @@
         </div>
 
         <div id="modalsWin">
-            <div class="modal position-fixed text-center " id="winner" tabindex="1" role="dialog" aria-hidden="true">
+            <div class="modal position-fixed text-center" id="winner" tabindex="1" role="dialog" aria-hidden="true">
                 <div class="modal-dialog " role="document">
                     <div class="modal-content ">
                         <iframe src="https://giphy.com/embed/xUNda3PK5oli2SPkBO?video=0" width="480" height="270"
@@ -139,7 +143,7 @@
                 </div>
             </div>
 
-            <div class="modal position-fixed text-center " id="dance" tabindex="1" role="dialog" aria-hidden="true">
+            <div class="modal position-fixed text-center" id="dance" tabindex="1" role="dialog" aria-hidden="true">
                 <div class="modal-dialog " role="document">
                     <div class="modal-content ">
                         <iframe src="https://giphy.com/embed/l4Epi5iue2quSrq9y?video=0" width="480" height="270"
@@ -149,7 +153,7 @@
                 </div>
             </div>
 
-            <div class="modal position-fixed text-center " id="banana" tabindex="1" role="dialog"
+            <div class="modal position-fixed text-center" id="banana" tabindex="1" role="dialog"
                 aria-hidden="true">
                 <div class="modal-dialog " role="document">
                     <div class="modal-content ">
@@ -168,7 +172,7 @@
                     <img src="assets/img/logorose.png" alt="image Fin" width="500" height="300">
                     <div id="end">
                         <div id="finalResult"></div>
-                        <a href="jeux.html" class="btn btn-light btn-lg replay pt-2" role="button">Rejouer !</a>
+                        <a href="jeux.html" class="btn btn-light text-light btn-lg replay pt-2" role="button">Rejouer !</a>
                     </div>
                 </div>
             </div>

@@ -34,7 +34,14 @@ body {
 }
 
 .score {
-    background-color: rgba(194, 121, 252, 0.562);
+    /*Glassmorphism*/
+    background: rgba( 194, 121, 252, 0.40 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 15px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    /*background-color: rgba(194, 121, 252, 0.562);*/
     /*background-color: rgba(27, 223, 223, 0.562);*/
     font-size: 2em;
     z-index : -500;
@@ -49,14 +56,12 @@ body {
 .droppable {
     width: 200px;
     height:200px;
-    background-color: rgb(253, 253, 253);
     border: 5px solid #2FB5B5 ;
 }
 
 .droppableMachine {
     width: 200px;
     height:200px;
-    background-color: rgb(253, 253, 253);
     border: 5px solid #E5007C;
 }
 
@@ -160,7 +165,14 @@ a:hover {
 #results{
     justify-content: center;
     text-align: center;
-    background-color: rgba(194, 121, 252, 0.562);/*#508fba;*/
+    /*Glassmorphism*/
+    background: rgba( 194, 121, 252, 0.40 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 15px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    /*background-color: rgba(194, 121, 252, 0.562);/*#508fba;*/
     color: black;
     font-size: 3em;
   }
@@ -179,10 +191,18 @@ a:hover {
 
 /*footer*/
 footer {
+    /*Glassmorphism*/
+    background: rgba( 194, 121, 252, 0.40 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 15px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
     /*background-color: rgba(228, 145, 160, 1);*/
-    background-color: rgba(194, 121, 252, 0.562);
+    /*background-color: rgba(194, 121, 252, 0.562);*/
     font-family: "Chivo", sans-serif;
     font-size: 20px;
+    color: white;
 }
 
 /*footer*/
@@ -203,6 +223,11 @@ footer {
     .img {
         width: 150px;
         height:150px;
+    }
+
+    .perso {
+        width: 140px;
+        height: 140px;
     }
     
     .droppableMachine {
