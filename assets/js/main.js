@@ -55,11 +55,11 @@ $ (function () {
                 var machine= choices[Math.floor(Math.random() * choices.length)];
                 console.log(machine);
                 if (machine == pierre){
-                    $(".droppableMachine").html(('<img class="img" src="assets/img/rock.png" width="150" height="180">'));
+                    $(".droppableMachine").html(('<img class="img mx-auto d-block" src="assets/img/rock.png">'));
                 } else if (machine == feuille) {
-                    $(".droppableMachine").html(('<img class="img" src="assets/img/feuille.png" width="150" height="180">'));
+                    $(".droppableMachine").html(('<img class="img mx-auto d-block" src="assets/img/feuille.png">'));
                 } else {
-                    $(".droppableMachine").html(('<img class="img" src="assets/img/victory.png" width="150" height="180">'));
+                    $(".droppableMachine").html(('<img class="img mx-auto d-block" src="assets/img/victory.png">'));
                 }
                 console.log(`Player : ${player} / PC : ${machine}`);
                 if (player == machine) {
