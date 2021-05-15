@@ -216,8 +216,8 @@ footer {
     }
     
     .droppable {
-        width: 140px;
-        height:140px;
+        max-width: 80%;
+        max-height: 55%;
     }
 
     .img {
@@ -231,8 +231,8 @@ footer {
     }
     
     .droppableMachine {
-        width: 140px;
-        height:140px;
+        max-width: 80%;
+        height: 55%;
     }
 
     .score {
