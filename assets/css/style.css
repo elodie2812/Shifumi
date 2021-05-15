@@ -65,6 +65,7 @@ body {
 }
 
 .tableau {
+    max-width: 33%;
     color: white;
 }
 
