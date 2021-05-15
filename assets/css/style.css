@@ -43,8 +43,7 @@ body {
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     /*background-color: rgba(194, 121, 252, 0.562);*/
     /*background-color: rgba(27, 223, 223, 0.562);*/
-    font-size: 2em;
-    z-index : -500;
+    font-size: 1.8em;
 }
 
 .draggable {
@@ -75,13 +74,13 @@ body {
  }*/
 
 .player1 {
-    font-size: 2em;
+    font-size: 1.8em;
     font-family: 'Goblin One', cursive;
     color: rgb(0,185,184)
 }
 
 .player2 {
-    font-size: 2em;
+    font-size: 1.8em;
     font-family: 'Goblin One', cursive;
     color: #E5007C;
 }
@@ -209,10 +208,10 @@ footer {
   
 
 @media screen AND (max-width: 680px) {
-
+    
     .draggable {
-        width: 140px;
-        height: 140px;
+        width: 90px;
+        height: 120px;
     }
     
     .droppable {
@@ -221,8 +220,8 @@ footer {
     }
 
     .img {
-        width: 150px;
-        height:150px;
+        width: 130px;
+        height:130px;
     }
 
     .perso {
@@ -236,15 +235,15 @@ footer {
     }
 
     .score {
-        font-size: 1.4em;
+        font-size: 1.2em;
     }
 
     .player1 {
-        font-size: 1.5em;
+        font-size: 1.4em;
     }
     
     .player2 {
-        font-size: 1.5em;
+        font-size: 1.4em;
     }
     
     /*#cParti {

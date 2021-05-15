@@ -19,7 +19,7 @@ $ (function () {
             var machineWin = win[Math.floor(Math.random() * win.length)];
             //console.log(machineWin);
             $(machineWin).show();
-            setTimeout(function(){ $(machineWin).hide(); }, 5000);
+            setTimeout(function(){ $(machineWin).hide(); }, 4000);
         }
     
         function gifLoose() {
@@ -28,7 +28,7 @@ $ (function () {
             var machineLoose = loose[Math.floor(Math.random() * loose.length)];
             //console.log(machineLoose);
             $(machineLoose).show();
-            setTimeout(function(){ $(machineLoose).hide(); }, 5000);
+            setTimeout(function(){ $(machineLoose).hide(); }, 4000);
         }
 
 
