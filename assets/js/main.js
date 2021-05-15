@@ -1,4 +1,5 @@
 $ (function () {
+    console.log(window.innerWidth)
     $("#results").hide();
 
         var choices= ["Pierre", "Feuille", "Ciseaux"];

@@ -207,7 +207,7 @@ footer {
 /*footer*/
   
 
-@media screen AND (max-width: 680px) {
+@media screen AND (max-width: 768px) {
     
     .draggable {
         width: 90px;
